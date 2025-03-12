@@ -21,7 +21,7 @@
             justify-content: center;
             min-height: 100vh;
             padding: 10px;
-            overflow: hidden;
+            overflow-y: auto;
         }
 
         /* Title */
@@ -36,13 +36,13 @@
             animation: fadeIn 2s ease-in-out;
         }
         h2 {
-            font-size: clamp(15px, 3.5vw, 34px);
+            font-size: clamp(15px, 2.5vw, 34px);
             font-weight: bold;
-            text-transform: uppercase;
+            /*text-transform: uppercase;*/
             background: linear-gradient(180deg, #ffcc70, #50fa7b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            letter-spacing: 1.5px;
+            letter-spacing: 0.5px;
             animation: fadeIn 2s ease-in-out;
             /*color: #50fa7b;  Greenish tone */
         }        
@@ -93,7 +93,7 @@
                 padding: 8px;
             }
             .line {
-                font-size: 17px;
+                font-size: clamp(11px, 4.2vw, 17px);
             }
         }
     </style>
@@ -125,6 +125,7 @@
         <div class="line">প্রথম দেখায় আপন সবার, মিষ্টি কথার জাদু,</div>
         <div class="line">আস্তে আস্তে রূপ দেখায় রাম রোহিম সাধু।</div>
     </div>
+    <h2>This site is created and maintained by Tapas Dutta and published under GNU GPLv3 Licence.<br>©Tapas Dutta 2025</h2>
 
     <!-- Background Music (Autoplays) -->
     <audio id="bg-music" loop>
