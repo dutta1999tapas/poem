@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&#2451;&#2474;&#2503;&#2453;&#2494;&#2480; &#2488;&#2503;&#2486; &#2472;&#2503;&#2447;</title>
-    <link href="https://dutta1999tapas.github.io/poem/stylesheet.css" rel="stylesheet">
-    <style>
-        body{font-family:'Amar Bangla',bold;background:linear-gradient(135deg,#0088cc,#00b894,#2ecc71);color:#222;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:10px;overflow-y:auto}
-        h1,h2,h3{font-weight:bold;color:#004d40}
-        h1{font-size:clamp(26px,5vw,40px);text-transform:uppercase;color:#fff;background:linear-gradient(90deg,#ffcc00,#ff5500);padding:8px 20px;border-radius:8px;display:inline-block;box-shadow:3px 3px 10px rgba(0,0,0,0.2)}
-        h2{font-size:clamp(15px,2.5vw,26px);position:relative;display:inline-block;padding:clamp(10px,2.8vw,30px) clamp(30px,8.4vw,80px);background:radial-gradient(ellipse at center,rgba(255,255,195,0.9) 10%,rgba(255,255,215,0.5) 50%,rgba(255,255,250,0) 70%)}
-        .p-c{width:92%;max-width:600px;padding:20px;background:rgba(255,255,255,0.9);border-radius:12px;box-shadow:0 8px 16px rgba(0,0,0,0.15);backdrop-filter:blur(8px);border:2px solid rgba(0,128,128,0.7);overflow-y:auto;max-height:70vh;animation:fadeIn 2s ease-in-out}
-        .l{font-size:clamp(17px,3.8vw,40px);font-family:'Kalpana Unicode',normal;line-height:1.6;margin:10px 0;opacity:0;position:relative;text-align:center;color:#004d40;font-weight:normal;transform:translateY(20px)}
-        @keyframes a1{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-        @media (max-width:480px){.p-c{max-height:65vh;padding:12px}.l{font-size:clamp(14px,5.5vw,25px)}}
-    </style>
-</head>
-<body>
-    <h1>&#2451;&#2474;&#2503;&#2453;&#2494;&#2480; &#2488;&#2503;&#2486; &#2472;&#2503;&#2447;</h1>
-    <h2>&#2463;&#2494;&#2474;&#2509;&#2478;&#2503; &#2470;&#2495;&#2453;&#2503;</h2>
-    <div class="p-c">
-        <div class="l">&#2475;&#2503;&#2482;&#2503;&#2486;&#2494;&#2480; &#2474;&#2503;&#2480; &#2475;&#2503;&#2482;&#2503; &#2476;&#2509;&#2480;&#2479;&#2495;&#2453;&#2495; &#2476;&#2494;&#2472;</div>
-        <div class="l">&#2478;&#2476;&#2480;&#2476;&#2494;&#2480; &#2488;&#2494;&#2489;&#2503; &#2453;&#2494;&#2488;!</div>
-    </div>
-    <h3>© Tapas Dutta 2025</h3>
-    <audio id="m" loop autoplay>
-        <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mpeg">
-    </audio>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let x = document.querySelectorAll(".l"), t = 400;
-            x.forEach((e, i) => { setTimeout(() => { e.style.opacity = "1"; e.style.transform = "translateY(0)"; e.style.animation = "a1 1.5s ease-out forwards" }, t); t += 1500; });
-            let a = document.getElementById("m");
-            function p() { a.play().catch(() => { document.addEventListener("click", y, { once: true }); document.addEventListener("touchstart", y, { once: true }) }) }
-            function y() { a.play() }
-            p();
-        });
-    </script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>অপেক্ষার শেষ নেই</title>
+		<link href="https://dutta1999tapas.github.io/poem/stylesheet.css" rel="stylesheet">
+		<style>
+			body{font-family:'Amar Bangla',bold;background:linear-gradient(135deg,#0088cc,#00b894,#2ecc71);color:#222;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:10px;overflow-y:auto;}
+			h1,h2,h3{text-transform:uppercase;font-weight:bold;}
+			h1{font-size:clamp(26px,5vw,40px);color:#fff;background:linear-gradient(90deg,#ffcc00,#ff5500);padding:8px 20px;border-radius:8px;box-shadow:3px 3px 10px rgba(0,0,0,0.2);}
+			h2{font-size:clamp(15px,2.5vw,26px);color:#004d40;display:inline-block;padding:clamp(10px,2.8vw,30px) clamp(30px,8.4vw,80px);background:radial-gradient(ellipse at center,rgba(255,255,195,0.9) 10%,rgba(255,255,215,0.5) 50%,rgba(255,255,250,0) 70%);}
+			.poem-container{width:92%;max-width:600px;padding:20px;background:rgba(255,255,255,0.9);border-radius:12px;box-shadow:0 8px 16px rgba(0,0,0,0.15);border:2px solid rgba(0,128,128,0.7);overflow-y:auto;max-height:70vh;animation:fadeIn 2s ease-in-out;}
+			.line{font-size:clamp(17px,3.8vw,40px);font-family:'Kalpana Unicode',normal;line-height:1.6;margin:10px 0;opacity:0;text-align:center;color:#004d40;font-weight:normal;transform:translateY(20px);}
+			@keyframes smoothAppear{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+			@media (max-width:480px){.poem-container{max-height:65vh;padding:12px;}.line{font-size:clamp(14px,5.5vw,25px);}}
+		</style>
+	</head>
+	<body>
+		<h1>অপেক্ষার শেষ নেই</h1>
+		<h2>তাপস দত্ত</h2>
+		<div class="poem-container">
+			<div class="line">ফর্মের পর ফর্ম ভরেছি হায়,</div>
+			<div class="line">স্বপ্নগুলো রয় ধুলায় আজও পড়ে।</div>
+			<div class="line">পরীক্ষার হলে কলম চালায়,</div>
+			<div class="line">ভয়ে কাঁপে বুক ফল বেরোলে।</div>
+			<br>
+			<div class="line">স্কুলে ছিলাম প্রথম সারি,</div>
+			<div class="line">প্রশ্ন মানেই ছিল খেলার ছল।</div>
+			<div class="line">আজও উত্তর ঠিকই করি,</div>
+			<div class="line">তবু নামটা কেন বাদ তালিকায় বল!</div>
+			<br>
+			<div class="line">বছর কেটে যায়, স্বপ্ন ফুরায়,</div>
+			<div class="line">পরিবার ভাবে চেষ্টা কম।</div>
+			<div class="line">কেউ বোঝে না ভাই,</div>
+			<div class="line">স্বপ্নই আজ গভীর রাতের কালো সমুদ্রের সম!</div>
+			<br>
+			<div class="line">চাকরি মানে ঘুষের খেলা,</div>
+			<div class="line">নিয়োগ মানে প্রতারণার জাল।</div>
+			<div class="line">পৃথিবী বলে, “তুই তো হেরেছিস,”</div>
+			<div class="line">হেরে যাবারও নেই যে আর বাকি কাল!</div>
+			<br>
+			<div class="line">সুযোগের মেয়াদ ফুরিয়ে যায়,</div>
+			<div class="line">ফিরে তাকাই ফাঁকা হাতে।</div>
+			<div class="line">স্বপ্নগুলো আজও বাঁচতে চায়,</div>
+			<div class="line">তবু মরে যায় সমাজের সাথে!</div>
+		</div>
+		<h3>This site is created and maintained by Tapas Dutta and published under GNU GPLv3 Licence.<br>© Tapas Dutta 2025</h3>
+		<audio id="bg-music" loop autoplay>
+			<source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mpeg">
+		</audio>
+		<script>
+			(function(){
+				let a=document.querySelectorAll(".line"),b=400;
+				a.forEach((c,d)=>{setTimeout(()=>{c.style.opacity="1";c.style.transform="translateY(0)";c.style.animation="smoothAppear 1.5s ease-out forwards";},b);b+=1500;});
+				let e=document.getElementById("bg-music");
+				function f(){e.play().catch(()=>{document.addEventListener("click",g,{once:true});document.addEventListener("touchstart",g,{once:true});});}
+				function g(){e.play();}
+				f();
+			})();
+		</script>
+	</body>
 </html>
